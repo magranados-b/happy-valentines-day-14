@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="device-container">
+        <img class="img-responsive" src="assets/img/02.png">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1>Feliz Día de San Valentín</h1>
+          @if (showMap()) {
+            <div style="text-align: center;">
+              <img src="assets/img/qr.svg" height="200px" width="200px">
+            </div>
+          } @else {
+          <h4>Te deseo un año con canciones que te pongan feliz, noches tranquilas y mensajes que te hagan sonreír sin
+            querer. Que la vida te sorprenda, pero bonito… como cuando te acuerdas que todavía existen cosas lindas. Con
+            todo mi cariño, Marco. 🌙✨</h4>
+          <div style="margin-top: 40px; text-align: center;">
+            <button class="btn btn-giftpink btn-gift-emoji" (click)="showModal()">
+              <span class="gift-emoji" aria-hidden="true">🎁</span>
+              Abrir regalo
+            </button>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="audioembed">
+  <audio controls="true" autoplay="true" src="assets/audio/audio.mp3" onloadeddata="setLowVolume()"
+    id="audio1"></audio>
+</div>
